@@ -1,0 +1,13 @@
+Doors=[]
+j=1
+for i in range(0,100):
+    Doors.append(0)
+print("every door is closed")
+for j in range(1,100):
+    for k in range(0,100,j):
+        if Doors[k]==0:
+            Doors.append(1)
+        if Doors[k]==1:
+            Doors.append(0)
+    j+=1
+    print(Doors)
